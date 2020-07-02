@@ -1,13 +1,33 @@
-$primary: #1455c0;
+/*$primary: #1455c0;
 $info: #00a099;
 $success: #63a615;
 $warning: #f39200;
-$danger: #ec0016;
+$danger: #ec0016;*/
+
+@import url("https://fonts.googleapis.com/css?family=Abel");
+$font-family-base: Abel;
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+$headings-font-family: Oswald;
+
+$primary: #2f3c48;
+$secondary: #6f7f8c;
+$success: #3e4d59;
+$danger: #cc330d;
+$info: #5c8f94;
+$warning: #6e9fa5;
+$light: #eceeec;
+$dark: #1e2b37;
 
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~react-bootstrap-typeahead/css/Typeahead.css";
 
 body,
 html {
+  background: #004b6d;
+  color: white;
   height: 100%;
+}
+
+table {
+  background: white;
 }

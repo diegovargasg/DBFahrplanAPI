@@ -66,7 +66,7 @@ function App() {
       setArrivalsErrors({});
     } catch (error) {
       setArrivalsErrors({
-        title: "Something went wrong fetching arrivals",
+        title: "Something went wrong fetching the arrivals",
         message: error.message,
       });
     }
@@ -80,7 +80,7 @@ function App() {
       setDeparturesErrors({});
     } catch (error) {
       setDeparturesErrors({
-        title: "Something went wrong fetching departures",
+        title: "Something went wrong fetching the departures",
         message: error.message,
       });
     }
@@ -114,7 +114,7 @@ function App() {
           </Form>
           {(!_.isEmpty(departures) || !_.isEmpty(arrivals)) && (
             <h2 className="mt-5 mb-5 text-center">
-              Schedule for {now.format("dddd, MMMM D YYYY")}
+              Schedule for {now.format("dddd, MMMM Do YYYY")}
             </h2>
           )}
           {!_.isEmpty(departuresError) && (
@@ -132,7 +132,7 @@ function App() {
           )}
           <Arrivals arrivals={arrivals} />
         </Col>
-        <Col xs={12} md={7} className="h-100">
+        <Col xs={12} md={7} className="h-100 pr-0">
           <GoogleMapReact
             bootstrapURLKeys={{
               key: MAPS_KEY,

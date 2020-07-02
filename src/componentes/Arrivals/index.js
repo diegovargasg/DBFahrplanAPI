@@ -1,7 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import moment from "moment";
-import Alert from "react-bootstrap/Alert";
 
 function Arrivals(props) {
   if (props.arrivals.length === 0) {

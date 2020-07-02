@@ -15,7 +15,7 @@ function Departures(props) {
           <tr>
             <th>Track</th>
             <th>Name</th>
-            <th>Oraigin</th>
+            <th>Origin</th>
             <th>Time</th>
           </tr>
         </thead>
