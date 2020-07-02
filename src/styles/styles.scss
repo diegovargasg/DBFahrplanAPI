@@ -1,0 +1,13 @@
+$primary: #1455c0;
+$info: #00a099;
+$success: #63a615;
+$warning: #f39200;
+$danger: #ec0016;
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~react-bootstrap-typeahead/css/Typeahead.css";
+
+body,
+html {
+  height: 100%;
+}
