@@ -1,11 +1,16 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import moment from "moment";
+import Alert from "react-bootstrap/Alert";
 
 function Arrivals(props) {
+  if (props.arrivals.length === 0) {
+    return null;
+  }
+
   return (
     <React.Fragment>
-      <h3>Arrivals for {props.date}:</h3>
+      <h5>Arrivals</h5>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>

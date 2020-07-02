@@ -3,9 +3,13 @@ import Table from "react-bootstrap/Table";
 import moment from "moment";
 
 function Departures(props) {
+  if (props.departures.length === 0) {
+    return null;
+  }
+
   return (
     <React.Fragment>
-      <h3>Departures for {props.date}:</h3>
+      <h5>Departures</h5>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
