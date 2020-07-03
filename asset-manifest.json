@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/DBFahrplanAPI/static/css/main.3eb4a10d.chunk.css",
+    "main.js": "/DBFahrplanAPI/static/js/main.e1967949.chunk.js",
+    "main.js.map": "/DBFahrplanAPI/static/js/main.e1967949.chunk.js.map",
+    "runtime-main.js": "/DBFahrplanAPI/static/js/runtime-main.deb1a609.js",
+    "runtime-main.js.map": "/DBFahrplanAPI/static/js/runtime-main.deb1a609.js.map",
+    "static/css/2.4e273e4f.chunk.css": "/DBFahrplanAPI/static/css/2.4e273e4f.chunk.css",
+    "static/js/2.fca82b01.chunk.js": "/DBFahrplanAPI/static/js/2.fca82b01.chunk.js",
+    "static/js/2.fca82b01.chunk.js.map": "/DBFahrplanAPI/static/js/2.fca82b01.chunk.js.map",
+    "index.html": "/DBFahrplanAPI/index.html",
+    "precache-manifest.6c654ab4384b45b5017bdde006c5904f.js": "/DBFahrplanAPI/precache-manifest.6c654ab4384b45b5017bdde006c5904f.js",
+    "service-worker.js": "/DBFahrplanAPI/service-worker.js",
+    "static/css/2.4e273e4f.chunk.css.map": "/DBFahrplanAPI/static/css/2.4e273e4f.chunk.css.map",
+    "static/css/main.3eb4a10d.chunk.css.map": "/DBFahrplanAPI/static/css/main.3eb4a10d.chunk.css.map",
+    "static/js/2.fca82b01.chunk.js.LICENSE.txt": "/DBFahrplanAPI/static/js/2.fca82b01.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.deb1a609.js",
+    "static/css/2.4e273e4f.chunk.css",
+    "static/js/2.fca82b01.chunk.js",
+    "static/css/main.3eb4a10d.chunk.css",
+    "static/js/main.e1967949.chunk.js"
+  ]
+}
