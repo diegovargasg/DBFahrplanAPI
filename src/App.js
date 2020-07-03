@@ -8,12 +8,11 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Arrivals from "./componentes/Arrivals";
 import Departures from "./componentes/Departures";
+import GoogleMaps from "./componentes/GoogleMaps";
 import Api from "./Api";
 import { AsyncTypeahead } from "react-bootstrap-typeahead";
-import GoogleMapReact from "google-map-react";
 
 const now = moment();
-const MAPS_KEY = process.env.REACT_APP_MAPS_KEY;
 const defaultCenter = {
   lat: 50.107149,
   lng: 8.663785,
@@ -144,21 +143,7 @@ function App() {
           <Arrivals arrivals={arrivals} />
         </Col>
         <Col xs={12} md={8} className="h-100 pr-0 pl-0">
-          <GoogleMapReact
-            bootstrapURLKeys={{
-              key: MAPS_KEY,
-            }}
-            center={{
-              lat: lat,
-              lng: lng,
-            }}
-            defaultZoom={15}
-            distanceToMouse={() => {}}
-          >
-            <div lat={lat} lng={lng} className="mapMaker">
-              <div className="inner">DB</div>
-            </div>
-          </GoogleMapReact>
+          <GoogleMaps lat={lat} lng={lng} />
         </Col>
       </Row>
     </Container>
