@@ -68,6 +68,7 @@ function App() {
       setArrivals(response.data);
       setArrivalsErrors({});
     } catch (error) {
+      setArrivals([]);
       setArrivalsErrors({
         title: "Something went wrong fetching the arrivals",
         message: error.message,
@@ -82,6 +83,7 @@ function App() {
       setDepartures(response.data);
       setDeparturesErrors({});
     } catch (error) {
+      setDepartures([]);
       setDeparturesErrors({
         title: "Something went wrong fetching the departures",
         message: error.message,
@@ -89,17 +91,10 @@ function App() {
     }
   };
 
-  const leftColStyle = {
-    boxShadow: "0 0 10px #1e2b37",
-    overflowY: "auto",
-    overFlowY: "hidden",
-    zIndex: 300,
-  };
-
   return (
     <Container fluid className="h-100">
       <Row className="h-100">
-        <Col xs={12} md={4} style={leftColStyle} className="h-100">
+        <Col xs={12} md={4} className="h-100 left-col">
           <Form className="mt-5">
             <Form.Group controlId="name">
               <h5>Location:</h5>
@@ -142,7 +137,7 @@ function App() {
           )}
           <Arrivals arrivals={arrivals} />
         </Col>
-        <Col xs={12} md={8} className="h-100 pr-0 pl-0">
+        <Col xs={12} md={8} className="h-100 pr-0 pl-0 right-col">
           <GoogleMaps lat={lat} lng={lng} />
         </Col>
       </Row>
