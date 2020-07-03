@@ -14,12 +14,16 @@ import GoogleMapReact from "google-map-react";
 
 const now = moment();
 const MAPS_KEY = process.env.REACT_APP_MAPS_KEY;
+const defaultCenter = {
+  lat: 50.107149,
+  lng: 8.663785,
+};
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [options, setOptions] = useState([]);
-  const [lat, setLat] = useState(50.1096947);
-  const [lng, setlng] = useState(8.6669987);
+  const [lat, setLat] = useState(defaultCenter.lat);
+  const [lng, setlng] = useState(defaultCenter.lng);
   const [name, setName] = useState("");
   const [arrivals, setArrivals] = useState([]);
   const [departures, setDepartures] = useState([]);
@@ -86,10 +90,17 @@ function App() {
     }
   };
 
+  const leftColStyle = {
+    boxShadow: "0 0 10px #1e2b37",
+    overflowY: "auto",
+    overFlowY: "hidden",
+    zIndex: 300,
+  };
+
   return (
     <Container fluid className="h-100">
       <Row className="h-100">
-        <Col xs={12} md={5}>
+        <Col xs={12} md={4} style={leftColStyle} className="h-100">
           <Form className="mt-5">
             <Form.Group controlId="name">
               <h5>Location:</h5>
@@ -132,7 +143,7 @@ function App() {
           )}
           <Arrivals arrivals={arrivals} />
         </Col>
-        <Col xs={12} md={7} className="h-100 pr-0">
+        <Col xs={12} md={8} className="h-100 pr-0 pl-0">
           <GoogleMapReact
             bootstrapURLKeys={{
               key: MAPS_KEY,
@@ -141,12 +152,13 @@ function App() {
               lat: lat,
               lng: lng,
             }}
-            defaultCenter={{
-              lat: 50.1096947,
-              lng: 8.6669987,
-            }}
             defaultZoom={15}
-          ></GoogleMapReact>
+            distanceToMouse={() => {}}
+          >
+            <div lat={lat} lng={lng} className="mapMaker">
+              <div className="inner">DB</div>
+            </div>
+          </GoogleMapReact>
         </Col>
       </Row>
     </Container>
