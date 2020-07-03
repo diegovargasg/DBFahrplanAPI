@@ -31,7 +31,9 @@ html {
 table {
   background: white;
 }
-
+.popover-contained {
+  cursor: pointer;
+}
 .mapMaker {
   width: 40px;
   height: 40px;

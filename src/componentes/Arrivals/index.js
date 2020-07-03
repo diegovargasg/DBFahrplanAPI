@@ -1,6 +1,8 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import moment from "moment";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 
 function Arrivals(props) {
   if (props.arrivals.length === 0) {
@@ -13,7 +15,7 @@ function Arrivals(props) {
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
-            <th>Track</th>
+            <th className="text-center">Track</th>
             <th>Name</th>
             <th>Origin</th>
             <th>Time</th>
@@ -23,12 +25,29 @@ function Arrivals(props) {
           {props.arrivals.map((item, key) => {
             const onlyTime = moment(item.dateTime).format("HH:mm");
             return (
-              <tr key={key}>
-                <td>{item.track}</td>
-                <td>{decodeURIComponent(item.name)}</td>
-                <td>{decodeURIComponent(item.origin)}</td>
-                <td>{onlyTime}</td>
-              </tr>
+              <OverlayTrigger
+                delay={1000}
+                key={key}
+                trigger="hover"
+                placement="right"
+                overlay={
+                  <Popover>
+                    <Popover.Title as="h3" className="text-dark">
+                      Response Object
+                    </Popover.Title>
+                    <Popover.Content>
+                      <pre>{JSON.stringify(item, null, 2)}</pre>
+                    </Popover.Content>
+                  </Popover>
+                }
+              >
+                <tr className="popover-contained">
+                  <td className="text-center">{item.track}</td>
+                  <td>{decodeURIComponent(item.name)}</td>
+                  <td>{decodeURIComponent(item.origin)}</td>
+                  <td>{onlyTime}</td>
+                </tr>
+              </OverlayTrigger>
             );
           })}
           <tr></tr>
