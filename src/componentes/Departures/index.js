@@ -20,10 +20,10 @@ function Departures(props) {
           </tr>
         </thead>
         <tbody>
-          {props.departures.map((item) => {
+          {props.departures.map((item, key) => {
             const onlyTime = moment(item.dateTime).format("HH:mm");
             return (
-              <tr>
+              <tr key={key}>
                 <td>{item.track}</td>
                 <td>{decodeURIComponent(item.name)}</td>
                 <td>{props.origin}</td>
