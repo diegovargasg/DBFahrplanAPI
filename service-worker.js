@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/DBFahrplanAPI/precache-manifest.860669b8a4f9fc46b5129e07ade5a824.js"
+  "/DBFahrplanAPI/precache-manifest.4e69d6122a8267c08a821b4c13d89d46.js"
 );
 
 self.addEventListener('message', (event) => {

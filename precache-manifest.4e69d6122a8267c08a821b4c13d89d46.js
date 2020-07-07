@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "047c041fd9d71459c1503ab17d2943e3",
+    "revision": "d9e64186a4cd57860787abd2fbe2e084",
     "url": "/DBFahrplanAPI/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DBFahrplanAPI/static/css/2.4e273e4f.chunk.css"
   },
   {
-    "revision": "f8e44b37300a13f41579",
+    "revision": "89d0a6eb34a0fb9ee669",
     "url": "/DBFahrplanAPI/static/css/main.6aa2b3ce.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DBFahrplanAPI/static/js/2.4d4acab0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8e44b37300a13f41579",
-    "url": "/DBFahrplanAPI/static/js/main.67482219.chunk.js"
+    "revision": "89d0a6eb34a0fb9ee669",
+    "url": "/DBFahrplanAPI/static/js/main.3367c3bc.chunk.js"
   },
   {
     "revision": "1e0d8a94d06b5057b5f9",

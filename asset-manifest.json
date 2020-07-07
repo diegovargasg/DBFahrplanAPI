@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DBFahrplanAPI/static/css/main.6aa2b3ce.chunk.css",
-    "main.js": "/DBFahrplanAPI/static/js/main.67482219.chunk.js",
-    "main.js.map": "/DBFahrplanAPI/static/js/main.67482219.chunk.js.map",
+    "main.js": "/DBFahrplanAPI/static/js/main.3367c3bc.chunk.js",
+    "main.js.map": "/DBFahrplanAPI/static/js/main.3367c3bc.chunk.js.map",
     "runtime-main.js": "/DBFahrplanAPI/static/js/runtime-main.deb1a609.js",
     "runtime-main.js.map": "/DBFahrplanAPI/static/js/runtime-main.deb1a609.js.map",
     "static/css/2.4e273e4f.chunk.css": "/DBFahrplanAPI/static/css/2.4e273e4f.chunk.css",
     "static/js/2.4d4acab0.chunk.js": "/DBFahrplanAPI/static/js/2.4d4acab0.chunk.js",
     "static/js/2.4d4acab0.chunk.js.map": "/DBFahrplanAPI/static/js/2.4d4acab0.chunk.js.map",
     "index.html": "/DBFahrplanAPI/index.html",
-    "precache-manifest.860669b8a4f9fc46b5129e07ade5a824.js": "/DBFahrplanAPI/precache-manifest.860669b8a4f9fc46b5129e07ade5a824.js",
+    "precache-manifest.4e69d6122a8267c08a821b4c13d89d46.js": "/DBFahrplanAPI/precache-manifest.4e69d6122a8267c08a821b4c13d89d46.js",
     "service-worker.js": "/DBFahrplanAPI/service-worker.js",
     "static/css/2.4e273e4f.chunk.css.map": "/DBFahrplanAPI/static/css/2.4e273e4f.chunk.css.map",
     "static/css/main.6aa2b3ce.chunk.css.map": "/DBFahrplanAPI/static/css/main.6aa2b3ce.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.4e273e4f.chunk.css",
     "static/js/2.4d4acab0.chunk.js",
     "static/css/main.6aa2b3ce.chunk.css",
-    "static/js/main.67482219.chunk.js"
+    "static/js/main.3367c3bc.chunk.js"
   ]
 }
